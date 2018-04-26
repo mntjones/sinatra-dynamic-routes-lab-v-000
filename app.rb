@@ -6,6 +6,13 @@ class App < Sinatra::Base
     "#{:name.reverse}"
   end
   
+  get '/square/:number' do
+    @number = :number.to_i
+    "#{@number^2}"
+  end
   
-  
+  get '/say/:number/:phrase'
+    @number = :number.to_i
+    "#{:phrase.@number}"
+  end
 end
