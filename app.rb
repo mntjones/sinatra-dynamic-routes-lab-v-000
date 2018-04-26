@@ -13,7 +13,7 @@ class App < Sinatra::Base
   
   get '/say/:number/:phrase' do
     @number = :number.to_i
-    "#{:phrase.@number}"
+    "#{:phrase * @number}"
   end
   
   get '/say/:word1/:word2/:word3/:word4/:word5' do
