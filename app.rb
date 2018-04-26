@@ -11,8 +11,16 @@ class App < Sinatra::Base
     "#{@number^2}"
   end
   
-  get '/say/:number/:phrase'
+  get '/say/:number/:phrase' do
     @number = :number.to_i
     "#{:phrase.@number}"
+  end
+  
+  get '/say/:word1/:word2/:word3/:word4/:word5' do
+    :word1 + :word2 + :word3 + :word4 + :word5
+  end
+  
+  get '/:operation/:number1/:number2' do
+    
   end
 end
